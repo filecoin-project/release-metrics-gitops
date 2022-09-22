@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: release-metrics
 resources:
   - release-metrics-exporters.yaml
+  - flux-kustomization.yaml
