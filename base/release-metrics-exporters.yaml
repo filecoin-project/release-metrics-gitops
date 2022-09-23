@@ -10,7 +10,7 @@ spec:
       version: ">=4.0.0 <5.0.0"
       sourceRef:
         kind: HelmRepository
-        name: release-metrics-exporters
+        name: weaveworks-charts
         namespace: release-metrics
       interval: 1m
   values:
