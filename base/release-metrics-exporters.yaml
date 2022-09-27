@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: weaveworks-charts
-        namespace: flux-system
+        namespace: release-metrics
       interval: 1m
   values:
     github:
