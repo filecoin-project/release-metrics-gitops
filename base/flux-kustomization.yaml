@@ -12,6 +12,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: release-metrics-gitops
-    namespace: release-metrics
+    namespace: flux-system
   path: "./secrets"
   prune: true
