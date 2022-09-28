@@ -6,5 +6,4 @@
 
 # Include manifest directories
 !/base/
-!/production/
-!/staging/
+!/secrets/
