@@ -7,3 +7,6 @@
 # Include manifest directories
 !/base/
 !/secrets/
+
+# Ignore non-kubernetes yaml
+/secrets/.sops.yaml
