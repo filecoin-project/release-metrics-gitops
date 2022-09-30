@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: release-metrics-exporters
-      version: "0.0.2"
+      version: "0.0.3"
       sourceRef:
         kind: HelmRepository
         name: weaveworks-charts
