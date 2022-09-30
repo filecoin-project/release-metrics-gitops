@@ -20,10 +20,6 @@ spec:
       metricsPath: /metrics
       repos:
       - filecoin-project/lotus
-      orgs:
-      - ""
-      users:
-      - ""
     dockerhub:
       listenPort: 9888
       metricsPath: /metrics
@@ -31,8 +27,6 @@ spec:
       - filecoin/lotus
       - filecoin/lotus-all-in-one
       - filecoin/lotus-test
-      orgs:
-      - ""
     homebrew:
       listenPort: 9888
       metricsPath: /metrics
