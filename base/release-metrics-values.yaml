@@ -20,6 +20,7 @@ spec:
       metricsPath: /metrics
       repos:
       - filecoin-project/lotus
+      - filecoin-project/helm-charts
     dockerhub:
       listenPort: 9888
       metricsPath: /metrics
