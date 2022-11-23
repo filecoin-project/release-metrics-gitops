@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: release-metrics-exporters
-      version: "0.0.6"
+      version: "0.1.0"
       sourceRef:
         kind: HelmRepository
         name: weaveworks-charts
@@ -16,12 +16,14 @@ spec:
   interval: 1m
   values:
     github:
+      interval : 10m
       listenPort: 9888
       metricsPath: /metrics
       repos:
       - filecoin-project/lotus
       - filecoin-project/helm-charts
     dockerhub:
+      interval : 10m
       listenPort: 9888
       metricsPath: /metrics
       images:
@@ -29,11 +31,13 @@ spec:
       - filecoin/lotus-all-in-one
       - filecoin/lotus-test
     homebrew:
+      interval : 10m
       listenPort: 9888
       metricsPath: /metrics
       formulae:
       - filecoin-project/lotus/lotus
     snapcraft:
+      interval : 10m
       listenPort: 9888
       metricsPath: /metrics
       names:
