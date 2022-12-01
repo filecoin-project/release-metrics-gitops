@@ -22,6 +22,7 @@ spec:
       repos:
       - filecoin-project/lotus
       - filecoin-project/helm-charts
+      - ipfs/kubo
     dockerhub:
       interval : 10m
       listenPort: 9888
@@ -30,12 +31,14 @@ spec:
       - filecoin/lotus
       - filecoin/lotus-all-in-one
       - filecoin/lotus-test
+      - ipfs/kubo
     homebrew:
       interval : 10m
       listenPort: 9888
       metricsPath: /metrics
       formulae:
       - filecoin-project/lotus/lotus
+      - ipfs
     snapcraft:
       interval : 10m
       listenPort: 9888
