@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: release-metrics-exporters
-      version: "0.1.0"
+      version: "0.1.2"
       sourceRef:
         kind: HelmRepository
         name: weaveworks-charts
@@ -47,3 +47,11 @@ spec:
       # ids can be found at https://dashboard.snapcraft.io/snaps/<SNAP_NAME>/
       - lotus  # id: NJBwi12Vq8X2ygw2FoJWnhvYYhQlRhuT
       - lotus-filecoin  # id: 1vzTBhup6bI9eocqFz93rMQjrC2qQvbg
+    circleci:
+      interval : 10m
+      listenPort: 9888
+      metricsPath: /metrics
+      org: filecoin-project
+      vcs: github
+      projects:
+      - lotus
